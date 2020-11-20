@@ -1,0 +1,18 @@
+.container {
+  width: 500px;
+  margin: auto;
+}
+
+
+
+
+.block {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+}
+.block li {
+  padding: 20px;
+  background-color: red;
+  border: 1px solid black;
+}
