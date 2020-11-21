@@ -1,18 +1,171 @@
-.container {
-  width: 500px;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: helvetica;
+}
+/* mostra o nascondi */
+.hidden {
+  opacity: 0;
+  transition: 0.8s;
+}
+.show {
+  opacity: 1;
+  transition: 0.8s;
+}
+/* /mostra o nascondi*/
+header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
+  background-color: rgb(100, 28, 52);
+  color: #ffff;
+}
+/* main */
+main {
+  height: calc(100vh - 120px);
+}
+/* scegli il livello */
+.livello-del-gioco {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300px;
   margin: auto;
+  background-color: #C0BEC3;
+  box-shadow: 0 0 10px black;
+}
+.livello-del-gioco select {
+  width: 80px;
+  border: 0;
+  margin: 10px;
+  background-color: #C0BEC3;
+}
+.livello-del-gioco button {
+  padding: 10px 30px;
+  margin: 10px;
+  background-color: #181B2E;
+  border: 1px solid #181B2E;
+  border-radius: 2px;
+  color: #ffff;
+  font-weight: bolder;
+}
+.livello-del-gioco button:hover {
+  color: #F6F699;
+}
+/*/ scegli il livello */
+/* risultato | botton play | punteggio */
+.btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 15px;
+}
+/* risultato */
+.messaggio {
+  text-align: center;
+  font-family: 'Nanum Gothic Coding', monospace;
+
+}
+.img-risultato {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRAwN8mcXwMhTY3rJLEYUDXjZgJtCUwCPBwfg&usqp=CAU);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.img-winner {
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  background-image: url(https://st3.depositphotos.com/5904380/13780/v/600/depositphotos_137803350-stock-illustration-oscar-film-festival-awards.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* button play */
+.btn button {
+  padding: 10px 40px;
+  margin: 20px;
+  background-color: #181B2E;
+  border: 1px solid #181B2E;
+  border-radius: 2px;
+  box-shadow: 0 0 10px black;
+  font-weight: bolder;
+  color: #C0BEC3;
+}
+.btn button:hover {
+  color: #ffff;
+  transform: scale(1.2, 1.2);
+  transition-duration: 0.5s;
+}
+/* punteggio */
+.tab {
+  text-align: center;
+  box-shadow: 0 0 10px black;
+  transition-duration: 0.9s;
+}
+.tab h5 {
+  padding: 2px;
+  background-color: #2B2A2F;
+  /* font-family: 'Bungee Inline', cursive; */
+  /* font-family: 'Geo', sans-serif; */
+  /* font-family: 'Nanum Gothic Coding', monospace; */
+  font-family: 'Raleway Dots', cursive;
+  /* font-family: 'Syncopate', sans-serif; */
+  color: #F6F699;
+}
+.tab p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: black;
+  /* font-family: 'Bungee Inline', cursive; */
+  font-family: 'Geo', sans-serif;
+  /* font-family: 'Nanum Gothic Coding', monospace; */
+  /* font-family: 'Raleway Dots', cursive; */
+  /* font-family: 'Syncopate', sans-serif; */
+  color: red;
+  font-size: 55px;
+  border: 2px solid  #2B2A2F;
 }
 
-
-
-
+/* risultato | botton play | punteggio */
+/* numeri giocati */
+.row_main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container {
+  width: 480px;
+  margin: auto;
+}
 .block {
   display: flex;
   flex-wrap: wrap;
   list-style-type: none;
+  background-color: #C0BEC3;
+  margin: 10px 0;
+  box-shadow: 0 0 10px black;
+  border-radius: 2px;
 }
 .block li {
-  padding: 20px;
-  background-color: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 60px;
+  height: 60px;
+  background-color: rgb(100, 28, 52);
   border: 1px solid black;
+  color: #ffff;
 }
+/* /numeri giocati */

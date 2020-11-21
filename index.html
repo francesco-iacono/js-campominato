@@ -3,26 +3,55 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- google font -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee+Inline&family=Geo&family=Nanum+Gothic+Coding:wght@400;700&family=Raleway+Dots&family=Syncopate:wght@400;700&display=swap" rel="stylesheet">
     <!-- foglio stile -->
     <link rel="stylesheet" href="css/style.css">
-    <title>Campominato</title>
+    <title>Campo Minato</title>
   </head>
   <body>
-    <div class="container">
-      <ul id="numeri-giocati" class="block">
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-        <li>1</li>
-      </ul>
-    </div>
-    <button id="gioca" type="button" name="button"></button>
-
+    <!-- header -->
+    <header>
+      <h1>Campo Minato</h1>
+    </header>
+    <!--/ header -->
+    <!-- main -->
+    <main>
+      <!-- scegli il livello -->
+      <div class="livello-del-gioco">
+        <h4>Level</h4>
+        <select name="eta" id="livello">
+          <option value="easy">Easy</option>
+          <option value="normal">Normal</option>
+          <option value="hard">Hard</option>
+        </select>
+        <button id="level" type="button" name="button">Go</button>
+      </div>
+      <!--/ scegli il livello -->
+      <!-- risultato | botton play | punteggio -->
+      <div class="btn">
+        <div class="messaggio">
+          <div id="img-WG" class="img-risultato hidden"></div>
+          <p id="risultato"></p>
+        </div>
+        <button id="gioca" class="hidden" type="button" name="button">Play</button>
+        <div id="tab-punteggio" class="tab hidden">
+          <h5>POINT</h5>
+          <p id="punteggio"></p>
+        </div>
+      </div>
+      <!-- /risultato | botton play | punteggio -->
+      <!-- numeri giocati -->
+      <div class="row_main">
+        <div class="container">
+          <ul id="numeri-giocati" class="block">
+          </ul>
+        </div>
+      </div>
+      <!--/ numeri giocati -->
+    </main>
+    <!-- /main -->
     <script src="js/script.js" charset="utf-8"></script>
   </body>
 </html>
